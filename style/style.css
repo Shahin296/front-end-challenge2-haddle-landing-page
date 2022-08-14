@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 800px;
+    background-image: linear-gradient(to bottom right, #c487e0 , #674bb1);
+    font-family: sans-serif;
+
+}
+
+.backgroundImage .forMoblie{
+    display: none;
+}
+.backgroundImage .forDesktop{
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    z-index: -100;
+    position: absolute;
+
+    
+}
+
+@media screen and (max-width:768px){
+    .backgroundImage .forMoblie{
+        display: block;
+        background-repeat: no-repeat;
+        z-index: -100;
+        position: absolute;
+    }
+    .backgroundImage .forDesktop{
+        display: none;
+    }
+}
+
+
+
+/* header */
+header img{
+    width: 170px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    padding-left: 5px;
+}
+
+.rightContent{
+    margin-top: 20px;
+    color: #fff;
+}
+
+button{
+    padding: 10px 30px;
+    border: none;
+    background-color: #fff;
+    color: hsl(257, 40%, 49%);
+    border-radius: 15px;
+    transition: .5s;
+}
+button:hover{
+    background-color:  hsl(300, 69%, 71%);
+    transition: 1s;
+    padding: 10px 35px;
+}
+
+
+/* footer */
+
+footer{
+    margin-top: 90px;
+    float: right;
+    padding: 0 60px;
+}
+
+.icon .fa-brands{
+    margin: 0 10px;
+    font-size: 25px;
+    color: #fff;
+}
+
+.icon .fa-brands:hover {
+    color: hsl(300, 69%, 71%);
+    transition: 0.5s;
+}
